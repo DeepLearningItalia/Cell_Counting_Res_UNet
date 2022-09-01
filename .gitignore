@@ -4,6 +4,13 @@
 fluocells_data/
 fluocells.zip
 
+# folders
+video/
+logs/
+models/
+debug/
+.idea/
+
 ### PYTHON TEMPLATE
 
 # Byte-compiled / optimized / DLL files
