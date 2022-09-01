@@ -48,7 +48,7 @@ def thresh_format(pred, t=0.5):
     return pred + tr
 
 
-def mask_post_processing(thresh_image, area_threshold=50, min_obj_size=10, max_dist=8, foot=8):
+def mask_post_processing(thresh_image, area_threshold=50, min_obj_size=10, max_dist=6, foot=8, min_maxi_size=5):
 
     # Find object in predicted image
     labels_pred, nlabels_pred = ndimage.label(thresh_image)
@@ -72,7 +72,7 @@ def mask_post_processing(thresh_image, area_threshold=50, min_obj_size=10, max_d
                                 labels=labels_bool)
 
     local_maxi = remove_small_objects(
-        local_maxi, min_size=5, connectivity=1, in_place=False)
+        local_maxi, min_size=min_maxi_size, connectivity=1, in_place=False)
     markers = ndimage.label(local_maxi)[0]
     labels = watershed(-distance, markers, mask=labels_bool,
                        compactness=1, watershed_line=True)
