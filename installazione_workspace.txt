@@ -1,0 +1,21 @@
+conda create -n corso_DLI python=3.9.6
+
+# conda install -c conda-forge mamba 
+
+# install pytorch gpu: https://pytorch.org/get-started/previous-versions/#v1100
+conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+
+# test installation
+# $ python
+# >>> import torch
+# >>> torch.cuda.is_available()
+
+# install fastai
+conda install -c fastai fastai==2.5.3
+
+# others
+conda install -c anaconda jupyter 
+conda install -c anaconda scikit-image==0.18.1
+conda install -c plotly plotly==5.1.0
+conda install -c conda-forge opencv==4.5.2
+conda install -c anaconda seaborn==0.11.2

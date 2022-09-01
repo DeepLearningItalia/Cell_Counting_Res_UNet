@@ -1,0 +1,15 @@
+python=3.9.6
+
+
+pytorch==1.10.0
+torchvision==0.11.0
+torchaudio==0.10.0
+cudatoolkit=11.3
+
+fastai==2.5.3
+
+jupyter 
+scikit-image==0.18.1
+plotly==5.1.0
+opencv==4.5.2
+seaborn==0.11.2
