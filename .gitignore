@@ -9,6 +9,7 @@ video/
 logs/
 models/
 debug/
+slides_figs/
 .idea/
 
 ### PYTHON TEMPLATE
