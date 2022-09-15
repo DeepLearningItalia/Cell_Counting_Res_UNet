@@ -12,6 +12,10 @@ debug/
 slides_figs/
 .idea/
 
+# miscellanea
+get_course_duration.py
+
+
 ### PYTHON TEMPLATE
 
 # Byte-compiled / optimized / DLL files
