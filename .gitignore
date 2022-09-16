@@ -11,10 +11,13 @@ models/
 debug/
 slides_figs/
 .idea/
+quiz/
 
 # miscellanea
 get_course_duration.py
-
+Indice corso.xlsx
+slide_lezioni.zip
+video_lezioni.zip
 
 ### PYTHON TEMPLATE
 
